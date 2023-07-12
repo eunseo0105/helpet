@@ -2,7 +2,7 @@
 <div align="center">
   
   ![Untitled](https://file.notion.so/f/s/fc1c63b1-65f6-49ea-841d-65d2e4e7d700/Untitled.png?id=f5b33988-b2e2-4b6f-9070-e12dfbeee3af&table=block&spaceId=917e3e36-0d94-4b0a-9483-11f954d77aaf&expirationTimestamp=1689235200000&signature=UFFRIAnsrLtPawk5jspAKQfw6Hit2ZzMJxASOA0QnuM&downloadName=Untitled.png)
-  
+
 
 매번 병원에 가서 정기검진을 하기엔 비용이 부담돼요 🥲
 
@@ -86,8 +86,8 @@
 </div>
 
 ---
-> ### 아키텍쳐
-
+> ### 개발 시나리오
+>![Untitled](https://file.notion.so/f/s/3fb3e34d-6a64-4ccb-b4e4-549bdd7cf5df/Untitled.png?id=626764e5-b501-4e9e-ba65-971e6e269d6d&table=block&spaceId=917e3e36-0d94-4b0a-9483-11f954d77aaf&expirationTimestamp=1689292800000&signature=HH8q2CgH9Iw4e_t4BFiDSiLKpcCyn6hx6t1rgpJGnpE&downloadName=Untitled.png)
 ---
 > ### ERD
 
