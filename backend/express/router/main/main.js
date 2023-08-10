@@ -2,15 +2,16 @@ const express = require('express')
 const session = require('express-session')
 const bodyParser = require('body-parser');
 
-// mysql 연결하는 코드를 FileStore 대신하는 코드 쓸 수 있음 
+const router = require("express").Router()
+
 const FileStore = require('session-file-store')(session)
 const app = express()
 
-var authRouter = require('../lib_login/auth');
+var auth = require('../lib_login');
 var authCheck = require('../lib_login/authCheck.js');
-var calendarRouter = require('../calendar/calendar');
+var calendar = require("../calendar");
+var pet = require('../pet');
 var communityRouter = require('../community/community');
-var petRouter = require('../pet/petRegister');
 
 app.use('/static', express.static('static'))
 app.use(express.urlencoded({
@@ -28,32 +29,37 @@ app.use(session({
     store: new FileStore(),
 }))
 
+// swagger 문서화
+const { swaggerUi, specs } = require("../swagger/swagger");
+app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(specs))
+
 // 세션
 app.get('/api/*', function (req, res, next) {
-    if (req.session.userId == undefined) res.status(500).send('Something broke!');
+    if (req.session.userId == undefined) res.status(500).send('세션 만료 or 존재하지 않음 !');
     else next();
 });
 
 // 인증 라우터
-app.use('/api/auth', authRouter);
+app.use('/api/auth', auth);
 
-// 캘린더 라우터
-app.use('/api/calendar', calendarRouter);
+// // 캘린더 라우터
+app.use('/api/calendar', calendar);
 
 // 커뮤니티 라우터
 app.use('/api/community', communityRouter);
 
 // 반려동물 라우터
-app.use('/api/pet', petRouter);
+app.use('/api/pet', pet);
 
 // 메인 페이지
-app.get('/main', (req, res) => {
-    if (!authCheck.isOwner(req, res)) {  // 로그인 안되어있으면 로그인 페이지로 이동시킴
-        res.json({ "result": "Login page로 이동" })
-    }
-    res.json({ "result": "Login Success! 메인화면입니다" })
-})
+// app.get('/main', (req, res) => {
+//     if (!authCheck.isOwner(req, res)) {  // 로그인 안되어있으면 로그인 페이지로 이동시킴
+//         res.json({ "result": "Login page로 이동" })
+//     }
+//     res.json({ "result": "Login Success! 메인화면입니다" })
+// })
 
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
 })
+
