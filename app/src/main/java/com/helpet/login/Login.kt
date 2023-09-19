@@ -14,7 +14,6 @@ import android.widget.Toast
 import androidx.core.content.ContextCompat
 import com.helpet.R
 import com.helpet.vector.HomeActivity
-import kotlinx.android.synthetic.main.register.*
 import okhttp3.MediaType
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import okhttp3.RequestBody
@@ -30,19 +29,19 @@ class Login : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.login)
 
-        val btn_login: Button = findViewById(R.id.btn_login)
+        val btn_login: Button = findViewById(R.id.btn_success)
 //        val btn_register: Button = findViewById(R.id.btn_register)
 //        val btn_find_id_pw: Button = findViewById(R.id.btn_find_id_pw)
-        val checkbox_login: CheckBox = findViewById(R.id.checkbox_login)
-        val userId: EditText = findViewById(R.id.edit_id)
-        val password: EditText = findViewById(R.id.edit_pw)
+//        val checkbox_login: CheckBox = findViewById(R.id.checkbox_login)
+        val editId: EditText = findViewById(R.id.edit_id)
+        val editPw: EditText = findViewById(R.id.edit_pw)
 
 
 
 
         btn_login.setOnClickListener { // 로그인하기
-            val userId = userId.text.toString()
-            val password = password.text.toString()
+            val userId = editId.text.toString()
+            val password = editPw.text.toString()
             Log.d("test", userId)
             Log.d("test", password)
 
@@ -65,9 +64,9 @@ class Login : AppCompatActivity() {
                         editor.putString("userId", userId) // 로그인한 userId를 저장
 
                         // "로그인 유지" 옵션을 선택한 경우, 체크박스 상태를 저장
-                        val isLoginChecked = checkbox_login.isChecked
-                        editor.putBoolean("isLoginChecked", isLoginChecked)
-
+//                        val isLoginChecked = checkbox_login.isChecked
+//                        editor.putBoolean("isLoginChecked", isLoginChecked)
+//
                         editor.apply()
 
                     } else if (success.toString() == "false") {

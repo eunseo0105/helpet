@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit
 
 
 object RetrofitApi {
-    private const val BASE_URL = "https://b31c-34-32-211-235.ngrok.io"
+    private const val BASE_URL = "https://2ff5-35-240-214-36.ngrok.io"
 
     var okHttpClient = OkHttpClient().newBuilder()
         .connectTimeout(30, TimeUnit.SECONDS)
@@ -23,12 +23,12 @@ object RetrofitApi {
         .client(okHttpClient)
         .build()
 
-//    val service: VectorService = retrofit.create(VectorService::class.java)
+//    val service: VectorService = retrofit.create(VectorSfervice::class.java)
 
 }
 
 object RetrofitApi2 {
-    private const val BASE_URL = "http://172.30.1.8:3000/"
+    private const val BASE_URL = "http://192.168.183.0:3000/"
 
     var okHttpClient = OkHttpClient().newBuilder()
         .connectTimeout(30, TimeUnit.SECONDS)
