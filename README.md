@@ -1,7 +1,7 @@
 ## Helpet
 <div align="center">
   
-  ![Untitled](https://file.notion.so/f/s/fc1c63b1-65f6-49ea-841d-65d2e4e7d700/Untitled.png?id=f5b33988-b2e2-4b6f-9070-e12dfbeee3af&table=block&spaceId=917e3e36-0d94-4b0a-9483-11f954d77aaf&expirationTimestamp=1689235200000&signature=UFFRIAnsrLtPawk5jspAKQfw6Hit2ZzMJxASOA0QnuM&downloadName=Untitled.png)
+  ![Helpet]([https://file.notion.so/f/s/fc1c63b1-65f6-49ea-841d-65d2e4e7d700/Untitled.png?id=f5b33988-b2e2-4b6f-9070-e12dfbeee3af&table=block&spaceId=917e3e36-0d94-4b0a-9483-11f954d77aaf&expirationTimestamp=1689235200000&signature=UFFRIAnsrLtPawk5jspAKQfw6Hit2ZzMJxASOA0QnuM&downloadName=Untitled.png](https://file.notion.so/f/f/917e3e36-0d94-4b0a-9483-11f954d77aaf/151993a4-27d7-4601-96f2-188d3572b9a9/%EC%8D%B8%EB%84%A4%EC%9D%BC.png?id=0f629ad4-dde4-4b37-b4b9-0db570d68e8b&table=block&spaceId=917e3e36-0d94-4b0a-9483-11f954d77aaf&expirationTimestamp=1695254400000&signature=GDLmRyj2Pb7sdBa3lFjuGjp19XVJOxs23c3X4EPhhAU&downloadName=%EC%8D%B8%EB%84%A4%EC%9D%BC.png))
 
 
 매번 병원에 가서 정기검진을 하기엔 비용이 부담돼요 🥲
@@ -21,7 +21,8 @@
 
 > ### 프로젝트 기간 및 소개 
 
-기간: 2022.12 ~ (진행 중🏃)
+기간: 2022.12 ~ (2023.09🏃)
+*현재 리팩토링 중 
 
 **👀반려동물 안구질환 진단 서비스**
 
