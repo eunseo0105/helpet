@@ -1,7 +1,7 @@
 ## Helpet
 <div align="center">
   
-![썸네일](https://github.com/seokjin0706/helpet/assets/101038047/4453a656-8da8-42f2-b674-41f503d36f16))
+![썸네일](https://github.com/seokjin0706/helpet/assets/101038047/4453a656-8da8-42f2-b674-41f503d36f16)
 
 
 매번 병원에 가서 정기검진을 하기엔 비용이 부담돼요 🥲
